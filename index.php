@@ -26,16 +26,16 @@
 </head>
 <body>
     <header class="justify-content-center vertical-center">
-        <h1 id="logo">myGame</h1>
+        <h1 id="logo">MYGAME</h1>
     </header>
     <section class="d-flex justify-content-center text-center mt-5">
         <form action="login.php" method="post">
             <p class="input_info">login:</p>
-            <div class="text_input"><input type="text" name="login"></div>
+            <div class="text_input mb-5"><input type="text" name="login"></div>
             <p class="input_info">password:</p>
-            <div class="text_input"><input type="password" name="password"></div>
+            <div class="text_input mb-5"><input type="password" name="password"></div>
             <div class="button_input" ><input type="submit" value="login"></div>
-            <p class="register"><a href="register.php">Register</a></p>
+            <div class="register mt-5"><a href="register.php">Register</a></div>
         </form>
 
     </section>
@@ -48,7 +48,10 @@
 
 
 
-<div id="comet"></div>
+    <div id="comet"></div>
+    <footer class="d-flex justify-content-center">
+        <p>-by Wyjciech Szutryk-</p>
+    </footer>
 
 
 <script src="scripts/comet.js"></script>

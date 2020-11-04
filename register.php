@@ -129,6 +129,7 @@
     <meta charset="utf-8">
     <title>game register</title>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script>
         function onSubmit(token) {
             document.getElementById("demo-form").submit();
@@ -136,67 +137,90 @@
     </script>
     <link rel="stylesheet" type="text/css" href="style/background.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-    <form method="post">
+    <header class="justify-content-center vertical-center">
+        <h1 id="logo">MYGAME</h1>
+    </header>
 
-        <p>Nick:</p>
-        <input type="text" value="<?php
-        if (isset($_SESSION['rem_nick'])){
-        echo $_SESSION['rem_nick']; unset($_SESSION['rem_nick']); }?>" name="nick">
-        <?php
-            if(isset($_SESSION['error_nick'])){
-                echo '<div class="error">'.$_SESSION['error_nick'].'</div>';
-                unset($_SESSION['error_nick']);
+    <section class="d-flex justify-content-center text-center mt-1">
+        <form method="post">
+            <p class="input_info" >Nick:</p>
+            <div class="text_input"><input type="text" value="<?php
+                if (isset($_SESSION['rem_nick'])){
+                    echo $_SESSION['rem_nick']; unset($_SESSION['rem_nick']); }?>" name="nick">
+                <?php
+                if(isset($_SESSION['error_nick'])){
+                    echo '<div class="error">'.$_SESSION['error_nick'].'</div>';
+                    unset($_SESSION['error_nick']);
+                }
+                ?>
+            </div>
+            <p class="input_info" >Email:</p>
+            <div class="text_input"><input type="text" value="<?php
+                if (isset($_SESSION['rem_email'])){
+                    echo $_SESSION['rem_email']; unset($_SESSION['rem_email']);} ?>" name="email">
+                <?php
+                if(isset($_SESSION['error_email'])){
+                    echo '<div class="error">'.$_SESSION['error_email'].'</div>';
+                    unset($_SESSION['error_email']);
+                }
+                ?>
+            </div>
+            <p class="input_info" >Password:</p>
+            <div class="text_input">
+                <input type="password" value="<?php
+                if (isset($_SESSION['rem_pass1'])){
+                    echo $_SESSION['rem_pass1']; unset($_SESSION['rem_pass1']); }?>" name="password1">
+                <?php
+                if(isset($_SESSION['error_password'])){
+                    echo '<div class="error">'.$_SESSION['error_password'].'</div>';
+                    unset($_SESSION['error_password']);
+                }
+                ?>
+            </div>
+                <p class="input_info" >Repeat Password:</p>
+                <div class="text_input"><input type="password" value="<?php
+                if (isset($_SESSION['rem_pass2'])){
+                    echo $_SESSION['rem_pass2']; unset($_SESSION['rem_pass2']);} ?>" name="password2">
+            </div>
+            <br>
+            <br>
+            <label><input type="checkbox" name="regulations" <?php
+                if (isset($_SESSION['rem_check'])){
+                    echo 'checked'; unset($_SESSION['rem_check']);} ?>>I've read and accepted privacy terms.</label>
+            <?php
+            if(isset($_SESSION['error_checkbox'])){
+                echo '<div class="error">'.$_SESSION['error_checkbox'].'</div>';
+                unset($_SESSION['error_checkbox']);
             }
-        ?>
-        <p>Email:</p>
-        <input type="text" value="<?php
-        if (isset($_SESSION['rem_email'])){
-            echo $_SESSION['rem_email']; unset($_SESSION['rem_email']);} ?>" name="email">
-        <?php
-        if(isset($_SESSION['error_email'])){
-            echo '<div class="error">'.$_SESSION['error_email'].'</div>';
-            unset($_SESSION['error_email']);
-        }
-        ?>
-        <p>Password:</p>
-        <input type="password" value="<?php
-        if (isset($_SESSION['rem_pass1'])){
-            echo $_SESSION['rem_pass1']; unset($_SESSION['rem_pass1']); }?>" name="password1">
-        <?php
-        if(isset($_SESSION['error_password'])){
-            echo '<div class="error">'.$_SESSION['error_password'].'</div>';
-            unset($_SESSION['error_password']);
-        }
-        ?>
-        <p>Repeat Password:</p>
-        <input type="password" value="<?php
-        if (isset($_SESSION['rem_pass2'])){
-            echo $_SESSION['rem_pass2']; unset($_SESSION['rem_pass2']);} ?>" name="password2">
-        <br>
-        <br>
-        <label><input type="checkbox" name="regulations" <?php
-            if (isset($_SESSION['rem_check'])){
-                echo 'checked'; unset($_SESSION['rem_check']);} ?>>I've read and accepted privacy terms.</label>
-        <?php
-        if(isset($_SESSION['error_checkbox'])){
-            echo '<div class="error">'.$_SESSION['error_checkbox'].'</div>';
-            unset($_SESSION['error_checkbox']);
-        }
-        ?>
-        <div class="g-recaptcha" data-sitekey="6LeDlN0ZAAAAALopigZgN6PxWopFXybbI75L-O7l"></div>
-        <?php
-        if(isset($_SESSION['error_bot'])){
-            echo '<div class="error">'.$_SESSION['error_bot'].'</div>';
-            unset($_SESSION['error_bot']);
-        }
-        ?>
-        <input type="submit" value="register"/>
+            ?>
+            <div class="g-recaptcha" data-sitekey="6LeDlN0ZAAAAALopigZgN6PxWopFXybbI75L-O7l"></div>
+            <?php
+            if(isset($_SESSION['error_bot'])){
+                echo '<div class="error">'.$_SESSION['error_bot'].'</div>';
+                unset($_SESSION['error_bot']);
+            }
+            ?>
 
-    </form>
+                <input class="register mt-5" type="submit" value="register"/>
 
+
+        </form>
+    </section>
+
+    <div id="comet"></div>
+    <script src="scripts/comet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="scripts/comet.js"></script>
 </body>
 </html>

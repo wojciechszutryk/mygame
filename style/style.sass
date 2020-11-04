@@ -2,6 +2,7 @@
 
 body
   height: 100%
+  color: white !important
 
 header
   height: 30% !important
@@ -9,29 +10,56 @@ header
 #logo
   font-family: 'Lato'
   letter-spacing: 5px
+  font-size: 50px
   font-weight: 700
-  font-size: 5vw
-  text-shadow: 2px 2px 5px red
+  text-shadow: 40px 40px 15px black
+  color: #eeeeee
 
 
 .error
-  color: blue
+  color: red
 
 .vertical-center
   display: flex
   align-items: center
 
-.text_input
-  margin: 5% !important
-  display: block
+.text_input input
+  margin-bottom: 1%
+  background-color: rgba(0,0,0,0) !important
+  border: 0px
+  border-bottom: 3px solid white
+  font-family: 'Oswald', sans-serif
+  text-align: center
+
+.text_input input:focus
+  box-shadow: none
+  outline: none
 
 .button_input
   margin: 10% 0 !important
+  color: #163580
+
+.button_input input:hover
+  transition: .5s
+  border-radius: 50%
+
+.register
+  background-color: white
+  transition: .5s
+
+.register:hover
+  border-radius: 50%
+
 
 .input_info
   font-family: 'Oswald', sans-serif
 
-.register a
-  color: #9999ff !important
+.register
+  color: #163580
   text-transform: uppercase
+
+.register a:hover
   text-decoration: none
+
+footer
+  color: #eeeeee

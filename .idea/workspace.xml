@@ -10,22 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="background style added">
-      <change afterPath="$PROJECT_DIR$/style/.sass-cache/3af696243a054d530e0c582826cf84241920633e/background.sassc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/.sass-cache/3af696243a054d530e0c582826cf84241920633e/style.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/background.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/background.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="centered login form added color to comets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/comet.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/comet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/.sass-cache/3af696243a054d530e0c582826cf84241920633e/style.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/style/.sass-cache/3af696243a054d530e0c582826cf84241920633e/style.sassc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/background.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +80,7 @@
       <workItem from="1604480727268" duration="393000" />
       <workItem from="1604481134258" duration="9423000" />
       <workItem from="1604500963816" duration="2891000" />
-      <workItem from="1604505298318" duration="1465000" />
+      <workItem from="1604505298318" duration="10780000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604410950330</created>
@@ -104,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604410974181</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="centered login form added color to comets">
+      <created>1604507056916</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604507056916</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,13 +124,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="background style added" />
-    <option name="LAST_COMMIT_MESSAGE" value="background style added" />
+    <MESSAGE value="centered login form added color to comets" />
+    <option name="LAST_COMMIT_MESSAGE" value="centered login form added color to comets" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1604393650487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Deployment/1920.0.1280.920/0.0.1536.824@0.0.1536.824" timestamp="1604393650487" />
+    <state x="395" y="91" key="#Inspections" timestamp="1604519058867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/1920.0.1280.920/0.0.1536.824@0.0.1536.824" timestamp="1604519058867" />
     <state x="444" y="94" key="#Options" timestamp="1604393604797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
