@@ -12,6 +12,7 @@
 <head>
     <meta charset="utf-8">
     <title>game</title>
+    <link rel="stylesheet" type="text/css" href="style/background.css">
 </head>
 <body>
 
@@ -33,5 +34,6 @@
     echo "<p> email: ".$_SESSION['email']."</p>";
 ?>
 
+<script src="scripts/comet.js"></script>
 </body>
 </html>

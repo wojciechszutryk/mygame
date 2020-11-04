@@ -64,5 +64,6 @@
     <h1>Thanks for registration</h1>
     You can now log in
     <a href="index.php">here</a>
+    <script src="scripts/comet.js"></script>
 </body>
 </html>

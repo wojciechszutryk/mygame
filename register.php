@@ -134,11 +134,8 @@
             document.getElementById("demo-form").submit();
         }
     </script>
-    <style>
-        .error{
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style/background.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 
@@ -200,5 +197,6 @@
 
     </form>
 
+    <script src="scripts/comet.js"></script>
 </body>
 </html>
