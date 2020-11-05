@@ -10,14 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="centered login form added color to comets">
+    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="registartion styled">
+      <change afterPath="$PROJECT_DIR$/style/game.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/comet.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/comet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/.sass-cache/3af696243a054d530e0c582826cf84241920633e/style.sassc" beforeDir="false" afterPath="$PROJECT_DIR$/style/.sass-cache/3af696243a054d530e0c582826cf84241920633e/style.sassc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +82,8 @@
       <workItem from="1604480727268" duration="393000" />
       <workItem from="1604481134258" duration="9423000" />
       <workItem from="1604500963816" duration="2891000" />
-      <workItem from="1604505298318" duration="10780000" />
+      <workItem from="1604505298318" duration="10912000" />
+      <workItem from="1604563904741" duration="2694000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604410950330</created>
@@ -103,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604507056916</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="registartion styled">
+      <created>1604524139745</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604524139745</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +135,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="background style added" />
     <MESSAGE value="centered login form added color to comets" />
-    <option name="LAST_COMMIT_MESSAGE" value="centered login form added color to comets" />
+    <MESSAGE value="registartion styled" />
+    <option name="LAST_COMMIT_MESSAGE" value="registartion styled" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1604393650487">

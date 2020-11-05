@@ -4,7 +4,7 @@ body {
   color: white !important; }
 
 header {
-  height: 30% !important; }
+  height: 30%; }
 
 #logo {
   font-family: "Lato";
@@ -51,7 +51,7 @@ header {
 .input_info {
   font-family: "Oswald", sans-serif; }
 
-.register {
+.register, .register a {
   color: #163580;
   text-transform: uppercase; }
 

@@ -33,11 +33,7 @@ function move_mouse(event) {
 
     let xmove = (event.clientX)/(window.innerWidth)*40-20
     let ymove = (event.clientY)/(window.innerHeight)*40-logoY/window.innerHeight*40
-    console.log(xmove, ymove)
     document.getElementById('logo').style.textShadow = -xmove + 'px ' + -ymove +  'px 10px black';
-
-
-
 
 }
 document.addEventListener("mousemove", move_mouse);
