@@ -129,6 +129,19 @@ aside
   margin: -75px 0 0 -75px
   list-style: none
 
+#factory
+  width: 70px
+  height: 70px
+  padding: 0
+  position: absolute
+  left: 50%
+  top: 50%
+  margin: -35px 0 0 -35px
+  list-style: none
+
+#factory span
+  z-index: 20
+
 .menu-button
   opacity: 0
   z-index: -1
@@ -145,8 +158,28 @@ aside
   overflow: hidden
   text-decoration: none
 
+.submenu-button
+  opacity: 0
+  z-index: -1
+  width: 70px
+  height: 70px
+  position: absolute
+  left: 50%
+  top: 50%
+  margin: -35px 0 0 -35px
+  border-radius: 50%
+  background: #424242
+  background-size: 100%
+  overflow: hidden
+  text-decoration: none
+
 #menu:not(:target)>a:first-of-type,
 #menu:target>a:last-of-type
+  opacity: 1
+  z-index: 2
+
+#factory:not(:target)>a:first-of-type,
+#factory:target>a:last-of-type
   opacity: 1
   z-index: 1
 
@@ -166,7 +199,23 @@ aside
   text-align: center
   font-family: "Oswald", sans-serif
 
-.menu-item:hover
+.factory-item
+  width: 40px
+  height: 40px
+  position: absolute
+  left: 55%
+  line-height: 5px
+  top: 50%
+  margin: -70px 0 0 -70px
+  border-radius: 50%
+  background-color: #424242
+  transform: translate(0px, 0px)
+  transition: transform 500ms
+  z-index: -2
+  text-align: center
+  font-family: "Oswald", sans-serif
+
+.menu-item:hover, #factory a:hover
   background-color: #737373
   transition: .5s
 
@@ -178,9 +227,13 @@ aside
   color: #fff
   text-decoration: none
 
-.menu-item a i
+.menu-item i
   margin-top: 15px
   font-size: 30px
+
+#factory:target>.submenu-item:nth-child(3)
+  transform: rotate(60deg) translateY(-120px) rotate(300deg)
+  transition-delay: 0s
 
 #menu:target>.menu-item:nth-child(6)
   transform: rotate(60deg) translateY(-120px) rotate(300deg)

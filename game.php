@@ -83,12 +83,24 @@
         <div class="d-flex justify-content-center game-menu">
             <div class="container">
                 <ul id="menu">
-                    <a class="menu-button" href="#menu" title="Build"></a>
-                    <a class="menu-button" href="#0" title="Upgrade"></a>
+                    <a class="menu-button" href="#menu" title="Show"></a>
+                    <a class="menu-button" href="#0" title="Hide"></a>
                     <li class="menu-item">
-                        <a href="#menu">
-                            <span>factory <br> <i class="fas fa-tools"></i></span>
-                        </a>
+                        <ul id="factory">
+                            <span>factory</span>
+                            <a class="submenu-button" href="#factory" title="Show"><span>factory <br> <i class="fas fa-tools"></i></span></a>
+                            <a class="submenu-button" href="#" title="Hide"><span>factory <br> <i class="fas fa-tools"></i></span></a>
+                            <li class="factory-item">
+                                <a href="#">
+                                    <span>lvl1</span>
+                                </a>
+                            </li>
+                            <li class="factory-item">
+                                <a href="#">
+                                    <span>lvl2</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="menu-item">
                         <a href="#menu">

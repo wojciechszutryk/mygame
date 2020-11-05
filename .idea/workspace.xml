@@ -10,8 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="added css to game">
-      <change afterPath="$PROJECT_DIR$/style/font-awesome.min.css" afterDir="false" />
+    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="building menu added to game.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/game.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/game.sass" afterDir="false" />
@@ -79,7 +78,7 @@
       <workItem from="1604500963816" duration="2891000" />
       <workItem from="1604505298318" duration="10912000" />
       <workItem from="1604563904741" duration="2768000" />
-      <workItem from="1604569400353" duration="22329000" />
+      <workItem from="1604569400353" duration="25634000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604410950330</created>
@@ -116,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604566672246</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="building menu added to game.php">
+      <created>1604605847864</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604605847864</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +146,8 @@
     <MESSAGE value="centered login form added color to comets" />
     <MESSAGE value="registartion styled" />
     <MESSAGE value="added css to game" />
-    <option name="LAST_COMMIT_MESSAGE" value="added css to game" />
+    <MESSAGE value="building menu added to game.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="building menu added to game.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1604393650487">
