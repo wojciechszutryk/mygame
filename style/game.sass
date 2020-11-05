@@ -1,4 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Oswald:wght@500&display=swap')
+
 aside
   float: left
-nav
+  position: relative
+  animation-name: move-right
+  animation-duration: 2s
+  background-color: white
+  color: #163580
+  padding-right: 3%
+  padding-left: 3%
+  padding-top: 10px
+  border-top: #404353 solid 10px
+  border-bottom: #404353 solid 10px
+  border-left: #404353 solid 30px
+  border-top-left-radius: 50%
+  border-bottom-left-radius: 50%
+.main_nav
   float: left
+  position: relative
+  animation-name: move-left
+  animation-duration: 2s
+  background-color: white
+  color: #163580
+  padding-right: 3%
+  padding-left: 3%
+  padding-top: 10px
+  border-top: #404353 solid 10px
+  border-bottom: #404353 solid 10px
+  border-right: #404353 solid 30px
+  border-top-right-radius: 50%
+  border-bottom-right-radius: 50%
+
+@keyframes move-right
+  0%
+    left: -200%
+  100%
+    left: 0%
+
+@keyframes move-left
+  0%
+    right: -200%
+  100%
+    right: 0%
+
+.field
+  float: left
+  height: 100px
+  width: 100px
+
+#field1
+  position: relative
+  border-right: 2px solid white
+  border-bottom: 2px solid white
+  animation-name: move-right
+  animation-duration: 4s
+
+#field2
+  position: relative
+  border-right: 2px solid white
+  border-left: 2px solid white
+  border-bottom: 2px solid white
+  animation-name: move-right
+  animation-duration: 4s
+
+#field3
+  position: relative
+  border-left: 2px solid white
+  border-bottom: 2px solid white
+  animation-name: move-left
+  animation-duration: 3s
+
+#field4
+  position: relative
+  border-right: 2px solid white
+  border-top: 2px solid white
+  border-bottom: 2px solid white
+  animation-name: move-right
+  animation-duration: 3s
+
+#field5
+  position: relative
+  border-right: 2px solid white
+  border-left: 2px solid white
+  border-top: 2px solid white
+  border-bottom: 2px solid white
+
+#field6
+  position: relative
+  border-left: 2px solid white
+  border-top: 2px solid white
+  border-bottom: 2px solid white
+  animation-name: move-left
+  animation-duration: 3s
+
+#field7
+  position: relative
+  border-right: 2px solid white
+  border-top: 2px solid white
+  animation-name: move-right
+  animation-duration: 3s
+
+#field8
+  position: relative
+  border-right: 2px solid white
+  border-left: 2px solid white
+  border-top: 2px solid white
+  animation-name: move-left
+  animation-duration: 4s
+
+#field9
+  position: relative
+  border-left: 2px solid white
+  border-top: 2px solid white
+  animation-name: move-left
+  animation-duration: 4s
+
+.action-menu
+  position: fixed
+  bottom: 0
+  width: 100%
+
+#menu
+  width: 150px
+  height: 150px
+  position: absolute
+  left: 50%
+  top: 50%
+  margin: -75px 0 0 -75px
+  list-style: none
+
+.menu-button
+  opacity: 0
+  z-index: -1
+  width: 150px
+  height: 150px
+  position: absolute
+  left: 50%
+  top: 50%
+  margin: -75px 0 0 -75px
+  border: white 4px solid
+  border-radius: 50%
+  background: #424242
+  background-size: 100%
+  overflow: hidden
+  text-decoration: none
+
+#menu:not(:target)>a:first-of-type,
+#menu:target>a:last-of-type
+  opacity: 1
+  z-index: 1
+
+.menu-item
+  width: 70px
+  height: 70px
+  position: absolute
+  left: 55%
+  line-height: 5px
+  top: 50%
+  margin: -50px 0 0 -50px
+  border-radius: 50%
+  background-color: #424242
+  transform: translate(0px, 0px)
+  transition: transform 500ms
+  z-index: -2
+  text-align: center
+  font-family: "Oswald", sans-serif
+
+.menu-item:hover
+  background-color: #737373
+  transition: .5s
+
+.menu-item a
+  color: #fff
+  text-decoration: none
+
+.menu-item a:hover
+  color: #fff
+  text-decoration: none
+
+.menu-item a i
+  margin-top: 15px
+  font-size: 30px
+
+#menu:target>.menu-item:nth-child(6)
+  transform: rotate(60deg) translateY(-120px) rotate(300deg)
+  transition-delay: 0s
+
+#menu:target>.menu-item:nth-child(5)
+  transform: rotate(20deg) translateY(-125px) rotate(-20deg)
+  transition-delay: 0.1s
+
+#menu:target>.menu-item:nth-child(4)
+  transform: rotate(-60deg) translateY(-120px) rotate(60deg)
+  transition-delay: 0.3s
+
+#menu:target>.menu-item:nth-child(3)
+  transform: rotate(-20deg) translateY(-125px) rotate(20deg)
+  transition-delay: 0.2s
+
+.content
+  position: absolute
+  text-align: center
+  margin: -10px 0 0 -30px
+  top: 70%
+  left: 50%
+  font-size: 20px
