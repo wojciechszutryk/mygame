@@ -83,19 +83,18 @@
         <div class="d-flex justify-content-center game-menu">
             <div class="container">
                 <ul id="menu">
-                    <a class="menu-button" href="#menu" title="Show"></a>
-                    <a class="menu-button" href="#0" title="Hide"></a>
+                    <a class="menu-button" href="#menu" title="Show" onclick="switch_menu()"></a>
+                    <a class="menu-button" href="#0" title="Hide" onclick="switch_menu()"></a>
                     <li class="menu-item">
                         <ul id="factory">
                             <span>factory</span>
-                            <a class="submenu-button" href="#factory" title="Show"><span>factory <br> <i class="fas fa-tools"></i></span></a>
-                            <a class="submenu-button" href="#" title="Hide"><span>factory <br> <i class="fas fa-tools"></i></span></a>
-                            <li class="factory-item">
+                            <a class="submenu-button" title="Produces steel" onclick="switch_factory()"><span>factory <br> <i class="fas fa-tools"></i></span></a>
+                            <li id="factory1">
                                 <a href="#">
                                     <span>lvl1</span>
                                 </a>
                             </li>
-                            <li class="factory-item">
+                            <li id="factory2">
                                 <a href="#">
                                     <span>lvl2</span>
                                 </a>
@@ -103,19 +102,52 @@
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="#menu">
-                            <span>platform <i class="fas fa-vector-square"></i><br> </span>
-                        </a>
+                        <ul id="platform">
+                            <span>platform</span>
+                            <a class="submenu-button" title="Allows to build" onclick="switch_platform()"><span>platform <i class="fas fa-vector-square"></i><br> </span></a>
+                            <li id="platform1">
+                                <a href="#">
+                                    <span>lvl1</span>
+                                </a>
+                            </li>
+                            <li id="platform2">
+                                <a href="#">
+                                    <span>lvl2</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="#menu">
-                            <span>powerhouse <br> <i class="fas fa-bolt"></i></span>
-                        </a>
+                        <ul id="powerhouse">
+                            <span>powerhouse</span>
+                            <a class="submenu-button" title="Produces energy" onclick="switch_powerhouse()"><span>powerhouse <br> <i class="fas fa-bolt"></i></a>
+                            <li id="powerhouse1">
+                                <a href="#">
+                                    <span>lvl1</span>
+                                </a>
+                            </li>
+                            <li id="powerhouse2">
+                                <a href="#">
+                                    <span>lvl2</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="#menu">
-                            <span>farm <br> <i class="fas fa-apple-alt"></i></span>
-                        </a>
+                        <ul id="farm">
+                            <span>farm</span>
+                            <a class="submenu-button" title="Produces food" onclick="switch_farm()"><span>farm <br> <i class="fas fa-apple-alt"></i></span></a>
+                            <li id="farm1">
+                                <a href="#">
+                                    <span>lvl1</span>
+                                </a>
+                            </li>
+                            <li id="farm2">
+                                <a href="#">
+                                    <span>lvl2</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -124,6 +156,7 @@
 
     <div id="comet"></div>
     <script src="scripts/comet.js"></script>
+    <script src="scripts/game.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

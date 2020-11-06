@@ -7,10 +7,17 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:submenu" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="building menu added to game.php">
+    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="started adding submenus">
+      <change afterPath="$PROJECT_DIR$/scripts/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/game.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/game.sass" afterDir="false" />
@@ -29,10 +36,16 @@
         <option value="SCSS File" />
         <option value="Sass File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jlzfMW8exzX0JrI6PVFyOH7PUV" />
@@ -78,7 +91,9 @@
       <workItem from="1604500963816" duration="2891000" />
       <workItem from="1604505298318" duration="10912000" />
       <workItem from="1604563904741" duration="2768000" />
-      <workItem from="1604569400353" duration="25634000" />
+      <workItem from="1604569400353" duration="25899000" />
+      <workItem from="1604674724309" duration="2922000" />
+      <workItem from="1604696900603" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604410950330</created>
@@ -122,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604605847864</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="started adding submenus">
+      <created>1604609346200</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604609346200</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +155,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="submenu" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -147,7 +181,8 @@
     <MESSAGE value="registartion styled" />
     <MESSAGE value="added css to game" />
     <MESSAGE value="building menu added to game.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="building menu added to game.php" />
+    <MESSAGE value="started adding submenus" />
+    <option name="LAST_COMMIT_MESSAGE" value="started adding submenus" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1604393650487">
