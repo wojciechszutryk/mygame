@@ -1,8 +1,13 @@
-var menu_shown = false
 var platform_shown = false
 var factory_shown = false
 var powerhouse_shown = false
 var farm_shown = false
+
+/*
+0 - no building , 11 - platform lvl1, 12 - platform lvl2,
+21 - factory lvl1, 22 - factory lvl2 ...
+ */
+var building = 0
 
 //hides all submenus
 function switch_menu(){
@@ -77,5 +82,39 @@ function switch_farm(){
         document.getElementById('farm1').style.transform = "translateY(0px)";
         document.getElementById('farm2').style.transform = "translateY(0px)";
         farm_shown = false;
+    }
+}
+
+function build_platform1(){
+    building = 11;
+    console.log(building);
+}
+function build_platform2(){
+    building = 11;
+}
+function build_factory1(){
+    building = 21;
+}
+function build_factory2(){
+    building = 22;
+}
+function build_powerhuse1(){
+    building = 31;
+}
+function build_powerhouse2(){
+    building = 32;
+}
+function build_farm1(){
+    building = 41;
+}
+function build_farm2(){
+    building = 42;
+}
+
+function build(where_to_build){
+    if (building){
+        console.log(building);
+        document.getElementById('field'+where_to_build).innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+        document.getElementById('field'+where_to_build).innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
     }
 }

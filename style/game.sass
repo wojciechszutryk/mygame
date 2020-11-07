@@ -48,6 +48,10 @@ aside
   height: 100px
   width: 100px
 
+.field:hover
+  background-color: #404353
+  transition: .5s
+
 #field1
   position: relative
   border-right: 2px solid white
@@ -115,6 +119,10 @@ aside
   animation-name: move-left
   animation-duration: 4s
 
+.fa-spinner
+  font-size: 60px
+  padding: 20px
+
 .action-menu
   position: fixed
   bottom: 0
@@ -128,6 +136,15 @@ aside
   top: 50%
   margin: -75px 0 0 -75px
   list-style: none
+
+.pulse
+  animation: pulse-animation 2s infinite ease-in-out
+
+@keyframes pulse-animation
+  0%
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2)
+  100%
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0)
 
 #factory, #platform, #powerhouse, #farm
   width: 70px
@@ -221,17 +238,27 @@ aside
   font-family: "Oswald", sans-serif
   transform-delay: 2s
 
+#factory1 a, #factory2 a,
+#platform1 a, #platform2 a,
+#powerhouse1 a, #powerhouse2 a,
+#farm1 a, #farm2 a
+  position: relative
+  top: 15px
+  left: 1px
+
+
+
 .menu-item:hover, #factory a:hover, #farm a:hover, #powerhouse a:hover, #platform a:hover
   background-color: #737373
   transition: .5s
 
 .menu-item a
   color: #fff
-  text-decoration: none
 
 .menu-item a:hover
   color: #fff
   text-decoration: none
+  cursor: pointer
 
 .menu-item i
   margin-top: 15px

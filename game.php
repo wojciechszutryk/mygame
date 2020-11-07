@@ -64,17 +64,17 @@
 
     <section class="d-flex justify-content-center field_container mt-4">
         <div class="fields">
-            <div class="field" id="field1"></div>
-            <div class="field" id="field2"></div>
-            <div class="field" id="field3"></div>
+            <div class="field" id="field1" onclick="build(1)"></div>
+            <div class="field" id="field2" onclick="build(2)"></div>
+            <div class="field" id="field3" onclick="build(3)"></div>
             <div style="clear: both"></div>
-            <div class="field" id="field4"></div>
-            <div class="field" id="field5"></div>
-            <div class="field" id="field6"></div>
+            <div class="field" id="field4" onclick="build(4)"></div>
+            <div class="field" id="field5" onclick="build(5)"></div>
+            <div class="field" id="field6" onclick="build(6)"></div>
             <div style="clear: both"></div>
-            <div class="field" id="field7"></div>
-            <div class="field" id="field8"></div>
-            <div class="field" id="field9"></div>
+            <div class="field" id="field7" onclick="build(7)"></div>
+            <div class="field" id="field8" onclick="build(8)"></div>
+            <div class="field" id="field9" onclick="build(9)"></div>
             <div style="clear: both"></div>
         </div>
     </section>
@@ -83,19 +83,19 @@
         <div class="d-flex justify-content-center game-menu">
             <div class="container">
                 <ul id="menu">
-                    <a class="menu-button" href="#menu" title="Show" onclick="switch_menu()"></a>
+                    <a class="menu-button pulse" href="#menu" title="Show" onclick="switch_menu()"></a>
                     <a class="menu-button" href="#0" title="Hide" onclick="switch_menu()"></a>
                     <li class="menu-item">
                         <ul id="factory">
                             <span>factory</span>
                             <a class="submenu-button" title="Produces steel" onclick="switch_factory()"><span>factory <br> <i class="fas fa-tools"></i></span></a>
-                            <li id="factory1">
-                                <a href="#">
+                            <li id="factory1" title="+1 steel/hour">
+                                <a onclick="build_factory1()">
                                     <span>lvl1</span>
                                 </a>
                             </li>
-                            <li id="factory2">
-                                <a href="#">
+                            <li id="factory2" title="+2 steel/hour">
+                                <a onclick="build_factory2()">
                                     <span>lvl2</span>
                                 </a>
                             </li>
@@ -105,13 +105,13 @@
                         <ul id="platform">
                             <span>platform</span>
                             <a class="submenu-button" title="Allows to build" onclick="switch_platform()"><span>platform <i class="fas fa-vector-square"></i><br> </span></a>
-                            <li id="platform1">
-                                <a href="#">
+                            <li id="platform1" title="build 1st lvl building">
+                                <a onclick="build_platform1()">
                                     <span>lvl1</span>
                                 </a>
                             </li>
-                            <li id="platform2">
-                                <a href="#">
+                            <li id="platform2" title="build 2nd lvl building">
+                                <a onclick="build_platform2()">
                                     <span>lvl2</span>
                                 </a>
                             </li>
@@ -121,13 +121,13 @@
                         <ul id="powerhouse">
                             <span>powerhouse</span>
                             <a class="submenu-button" title="Produces energy" onclick="switch_powerhouse()"><span>powerhouse <br> <i class="fas fa-bolt"></i></a>
-                            <li id="powerhouse1">
-                                <a href="#">
+                            <li id="powerhouse1" title="+1 energy/hour">
+                                <a onclick="build_powerhuse1()">
                                     <span>lvl1</span>
                                 </a>
                             </li>
-                            <li id="powerhouse2">
-                                <a href="#">
+                            <li id="powerhouse2" title="+2 energy/hour">
+                                <a onclick="build_powerhouse2()">
                                     <span>lvl2</span>
                                 </a>
                             </li>
@@ -137,13 +137,13 @@
                         <ul id="farm">
                             <span>farm</span>
                             <a class="submenu-button" title="Produces food" onclick="switch_farm()"><span>farm <br> <i class="fas fa-apple-alt"></i></span></a>
-                            <li id="farm1">
-                                <a href="#">
+                            <li id="farm1" title="+1 food/hour">
+                                <a onclick="build_farm1()">
                                     <span>lvl1</span>
                                 </a>
                             </li>
-                            <li id="farm2">
-                                <a href="#">
+                            <li id="farm2" title="+2 food/hour">
+                                <a onclick="build_farm2()">
                                     <span>lvl2</span>
                                 </a>
                             </li>
