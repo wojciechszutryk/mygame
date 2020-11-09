@@ -16,9 +16,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="Finished animated build-menu">
+    <list default="true" id="8187b4fd-8bd0-4dfb-b2af-d593485d693f" name="Default Changelist" comment="Added pulse effect to build-menu&#10;centered submenu text&#10;added hover-description to buildmenu elements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/game.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style/game.sass" afterDir="false" />
     </list>
@@ -94,7 +96,10 @@
       <workItem from="1604569400353" duration="25899000" />
       <workItem from="1604674724309" duration="2922000" />
       <workItem from="1604696900603" duration="4228000" />
-      <workItem from="1604738877880" duration="6618000" />
+      <workItem from="1604738877880" duration="6691000" />
+      <workItem from="1604766122608" duration="257000" />
+      <workItem from="1604783731436" duration="1799000" />
+      <workItem from="1604915977839" duration="5102000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604410950330</created>
@@ -152,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604702413393</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added pulse effect to build-menu&#10;centered submenu text&#10;added hover-description to buildmenu elements">
+      <created>1604745586886</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604745586886</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +203,8 @@
     <MESSAGE value="building menu added to game.php" />
     <MESSAGE value="started adding submenus" />
     <MESSAGE value="Finished animated build-menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished animated build-menu" />
+    <MESSAGE value="Added pulse effect to build-menu&#10;centered submenu text&#10;added hover-description to buildmenu elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pulse effect to build-menu&#10;centered submenu text&#10;added hover-description to buildmenu elements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1604393650487">

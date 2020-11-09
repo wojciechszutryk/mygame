@@ -49,7 +49,7 @@
 
     <div id="comet"></div>
     <footer class="d-flex justify-content-center">
-        <p>-by Wyjciech Szutryk-</p>
+        <p>-by Wojciech Szutryk-</p>
     </footer>
 
 

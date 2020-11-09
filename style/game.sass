@@ -120,8 +120,13 @@ aside
   animation-duration: 4s
 
 .fa-spinner
-  font-size: 60px
-  padding: 20px
+  font-size: 60px !important
+  padding: 20px !important
+
+.symbol
+  position: absolute
+  font-size: 15px
+  padding: 42.5px
 
 .action-menu
   position: fixed
@@ -195,10 +200,10 @@ aside
   opacity: 1
   z-index: 2
 
-#factory:not(:target)>a:first-of-type,
-#platform:not(:target)>a:first-of-type,
-#powerhouse:not(:target)>a:first-of-type,
-#farm:not(:target)>a:first-of-type
+#factory >a,
+#platform>a,
+#powerhouse>a,
+#farm>a
   opacity: 1
   z-index: 1
 
@@ -246,7 +251,12 @@ aside
   top: 15px
   left: 1px
 
-
+#factory1 a:hover, #factory2 a:hover,
+#platform1 a:hover, #platform2 a:hover,
+#powerhouse1 a:hover, #powerhouse2 a:hover,
+#farm1 a:hover, #farm2 a:hover
+  color: #424242 !important
+  background-color: #424242 !important
 
 .menu-item:hover, #factory a:hover, #farm a:hover, #powerhouse a:hover, #platform a:hover
   background-color: #737373

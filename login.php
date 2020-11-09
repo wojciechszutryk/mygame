@@ -36,6 +36,15 @@
                         $_SESSION['food'] = $row['food'];
                         $_SESSION['email'] = $row['email'];
                         $_SESSION['premium'] = $row['premium'];
+                        $_SESSION['field1'] = $row['field1'];
+                        $_SESSION['field2'] = $row['field2'];
+                        $_SESSION['field3'] = $row['field3'];
+                        $_SESSION['field4'] = $row['field4'];
+                        $_SESSION['field5'] = $row['field5'];
+                        $_SESSION['field6'] = $row['field6'];
+                        $_SESSION['field7'] = $row['field7'];
+                        $_SESSION['field8'] = $row['field8'];
+                        $_SESSION['field9'] = $row['field9'];
 
                         unset($_SESSION['error']);
 

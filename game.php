@@ -23,6 +23,7 @@
     <script src="https://kit.fontawesome.com/a2f9bfa99d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/r.js"></script>
 </head>
 <body>
     <header class="justify-content-center vertical-center" style="height: 10%">
