@@ -123,25 +123,26 @@ function build(where_to_build){
     if (building) {
         console.log(building);
         document.getElementById('field' + where_to_build).innerHTML = '<i class="fas fa-spinner fa-spin symbol"></i>' + symbol;
-        var mysql = require(['mysql']);
 
-
-        var con = mysql.createConnection({
-            host: "localhost",
-            user: "root",
-            password: "",
-            database: "mygame"
+        var mysql      = require(['mysql']);
+        var connection = mysql.createConnection({
+            host     : 'localhost',
+            user     : 'root',
+            password : '',
+            database : 'mygame'
         });
 
-        con.connect(function (err) {
+        connection.connect(function(err) {
             if (err) throw err;
             console.log("Connected!");
-            var sql = "INSERT INTO user_data (field" + where_to_build + ") VALUES (" + building + ")";
-            con.query(sql, function (err, result) {
-                if (err) throw err;
-                console.log("1 record inserted");
-            });
         });
+
+        connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+            if (error) throw error;
+            console.log('The solution is: ', results[0].solution);
+        });
+
+        connection.end();
     }
 
 }
